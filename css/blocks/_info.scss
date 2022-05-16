@@ -1,0 +1,51 @@
+/* CSS Document */
+
+#info{
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	width: 4vw;
+	height: 4vw;
+	background-color: rgba(117,137,12,0.9);
+	fill: #fff;
+	padding: 1.1vw;
+	cursor: pointer;
+	box-shadow: -10px 7px 10px -6px rgba(9, 9, 9, 0.53);
+	color: #FFFFFF;
+}
+#info_box svg{
+	height: 0.88vw;
+	fill: #fff;
+	color: #fff;
+	margin-right: 0.52vw;
+}
+#info_box {
+	position: fixed;
+	right: 0;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.7);
+	padding: 1vw 3.85vw 1vw 1vw;
+	top: 6.2vw;
+	box-shadow: -10px 7px 10px -6px rgba(9, 9, 9, 0.53);
+	color: #fff;
+	transform: translateX(100%); /*клик info_box и + еще main.js*/
+	transition: all 0.35s;
+}
+#info_box.open{
+	transform: translateX(0%);/*клик info_box и + еще main.js*/
+	transition: all 0.35s;
+}
+#info_box li{
+	list-style: none;
+	font-size: 0.83vwax;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	align-content: center;
+	line-height: 0.78vmax;
+	margin-bottom: 1vw;
+}
+#info_box li:last-of-type{
+	margin-bottom: 0;
+}

@@ -1,0 +1,60 @@
+/* CSS Document */
+main{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 15.62vw;
+}
+.work_box{
+	height: 16.19vw;
+	max-width: 21.09vw;
+	width: 25%;
+	position: relative;
+	overflow: hidden;
+}
+.work_box img{
+	width: calc( 100% + 10vw );
+	height: auto;
+	position: absolute;
+	z-index: 1;
+}
+.work_box a{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: inherit;
+	background-color:  rgba(117,137,12,0.9);
+	color: #fff;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	opacity: 0;
+}
+.work_box a:hover{
+	opacity: 1;
+}
+.arrow{
+	width: 3vw;
+	height: 3vw;
+	fill: #fff;
+}
+.work_box h2{
+	font-size: 1.25vw;
+	font-weight: 400;
+	margin-bottom: 0.78vw;
+}
+.work_box h3{
+	font-size: 0.62vw;
+	font-weight: 400;
+}
+.work_box h3:after{
+	content: '';
+	width: 50%;
+	height: 1px;
+	margin: 1vw auto;
+	display: block;
+	background-color: #fff;
+}
